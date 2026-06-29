@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tanmay Rongre — MERN Full Stack Developer crafting high-performance web apps with beautiful UIs.">
+    <title>Tanmay Rongre | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="cursor-dot" id="data-cursor-dot"></div>
+    <div class="cursor-outline" id="data-cursor-outline"></div>
+    <div class="nav-container">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#home" class="nav-logo">TR<span class="glow-dot">.</span></a>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" title="Home">
+                        <span class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" title="About">
+                        <span class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </span>
+                        <span class="nav-text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" title="Projects">
+                        <span class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </span>
+                        <span class="nav-text">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" title="Services">
+                        <span class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </span>
+                        <span class="nav-text">Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" title="Contact">
+                        <span class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tanmayrongre.github.io/Connect-hub" target="_blank" title="Connect Hub">
+                        <span class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                            </svg>
+                        </span>
+                        <span class="nav-text">Connect Hub</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-action">
+                <button class="theme-toggle-btn" id="themeToggleBtn" type="button" title="Change Theme">
+                    <span class="theme-toggle-icon" id="themeToggleIcon">🌑</span>
+                </button>
+                <a href="#contact">
+                    <button class="hire-button" type="button">Hire Me</button>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-container" id="home">
+
+        <div class="left-sidebar">
+            <div class="name-card-wrapper" id="name-card-wrapper">
+                <!-- Lanyard strap -->
+                <div class="lanyard-strap">
+                    <div class="strap-weave"></div>
+                    <div class="strap-clip">
+                        <div class="clip-bar"></div>
+                        <div class="clip-hook"></div>
+                    </div>
+                </div>
+
+                <div class="name-card" id="name-card">
+                    <!-- Top color band -->
+                    <div class="id-strip">
+                        <span class="id-strip-label">DEVELOPER ID</span>
+                        <div class="id-hole-container">
+                            <div class="id-hole"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <!-- Company / org row -->
+                        <div class="card-org-row">
+                            <div class="org-logo-dot"></div>
+                            <span class="org-name">TR<span class="org-dot">.</span>DEV</span>
+                            <span class="card-year">2026</span>
+                        </div>
+
+                        <div class="profile-image">
+                            <img src="./icons/profile.png" alt="Tanmay Rongre">
+                            <div class="profile-ring"></div>
+                        </div>
+
+                        <div class="profile-info">
+                            <h1>Tanmay Rongre</h1>
+                            <div class="role-badge">FULL STACK ENGINEER</div>
+                            <p>MERN · React · Node · MongoDB</p>
+                        </div>
+
+                        <!-- Info rows -->
+                        <div class="card-info-grid">
+                            <div class="card-info-item">
+                                <span class="info-label">DEPT</span>
+                                <span class="info-value">Web Engineering</span>
+                            </div>
+                            <div class="card-info-item">
+                                <span class="info-label">STATUS</span>
+                                <span class="info-value status-active"><span class="status-dot"></span>Available</span>
+                            </div>
+                        </div>
+
+                        <!-- Barcode -->
+                        <div class="id-barcode">
+                            <div class="barcode-lines"></div>
+                            <span class="barcode-num">TR-2026-MERN</span>
+                        </div>
+
+                        <div class="sidebar-socials">
+                            <a href="https://github.com/tanmayrongre" target="_blank" class="social-icon-btn" title="GitHub">
+                                <img src="./icons/github.png" alt="GitHub">
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="LinkedIn">
+                                <img src="./icons/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon-btn" title="Instagram">
+                                <img src="./icons/instagram.png" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content">
+
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-heading">
+                        <h1 class="main-title"><span class="dimmed-text">MERN</span> FULL STACK<span
+                                class="dimmed-text">.</span></h1>
+                        <p class="hero-description">
+                            Passionate about creating intuitive and engaging user experiences.
+                            Specialize in transforming ideas into beautifully crafted products.
+                        </p>
+                    </div>
+
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <span class="number">+3</span>
+                            <span class="label">AMAZING CERTIFICATES</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="number">+2</span>
+                            <span class="label">TOP INTERNSHIPS</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="number">+5</span>
+                            <span class="label">SELFMADE PROJECTS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section" id="about">
+                <div class="about-layout-container">
+                    <div class="about-top-row">
+
+                        <div class="about-headline">
+                            <h2><span class="dimmed-text">ABOUT</span> ME<span class="dimmed-text">.</span></h2>
+                        </div>
+
+                        <p class="about-lead">
+                            I am a driven Full Stack Engineer who loves bridging the gap between clean user interfaces
+                            and powerful backend logic.
+                        </p>
+
+                        <div class="about-grey-text">
+                            <p class="about-text">
+                                My journey into engineering started with a curiosity about how complex digital systems
+                                work under the hood. Today, I focus on building responsive, highly functional web
+                                applications using modern languages, robust data structures, and optimized schemas.
+                            </p>
+                            <p class="about-text">
+                                When I'm not writing code or tweaking UI frames in Figma, you'll usually find me
+                                exploring offline AI LLM models and troubleshooting hardware performance settings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-certificates">
+                        <h3>CERTIFICATIONS</h3>
+
+                        <div class="certs-asym-grid">
+                            <div class="cert-card horizontal-1">
+                                <div class="cert-image-wrapper">
+                                    <img src="./icons/cert2.png" alt="HCL GUVI Certificate" class="cert-display-img">
+                                </div>
+                                <div class="cert-meta">
+                                    <div class="cert-details">
+                                        <span class="cert-name">ChatGPT for Everyone</span>
+                                        <span class="cert-sub">HCL GUVI</span>
+                                    </div>
+                                    <a href="https://www.guvi.in/verify-certificate?id=z19M7K08G30a228yt8"
+                                        target="_blank" class="verify-btn">Verify</a>
+                                </div>
+                            </div>
+
+                            <div class="cert-card horizontal-2">
+                                <div class="cert-image-wrapper">
+                                    <img src="./icons/cert2.png" alt="GrowthSchool Certificate"
+                                        class="cert-display-img">
+                                </div>
+                                <div class="cert-meta">
+                                    <div class="cert-details">
+                                        <span class="cert-name">Generative AI Workshop</span>
+                                        <span class="cert-sub">GrowthSchool</span>
+                                    </div>
+                                    <a href="https://learners.growthschool.io/certificate/90ea5d28-58f9-47d5-8265-e5ba9bb97a83"
+                                        target="_blank" class="verify-btn">Verify</a>
+                                </div>
+                            </div>
+
+                            <div class="cert-card vertical-tall">
+                                <div class="cert-image-wrapper">
+                                    <img src="./icons/cert1.png" alt="Google Educator Certificate"
+                                        class="cert-display-img">
+                                </div>
+                                <div class="cert-meta">
+                                    <div class="cert-details">
+                                        <span class="cert-name">Gemini Certified Educator</span>
+                                        <span class="cert-sub">Google</span>
+                                    </div>
+                                    <a href="https://arcade.googlecloud.com/" target="_blank"
+                                        class="verify-btn">Verify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PROJECTS SECTION ===== -->
+            <div class="projects-section" id="projects">
+                <div class="projects-header">
+                    <span class="projects-sub">What I've built</span>
+                    <h2 class="projects-title"><span class="dimmed-text">MY</span> PROJECTS<span class="dimmed-text">.</span></h2>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Featured: Connect Hub -->
+                    <div class="project-card project-featured">
+                        <div class="project-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-top">
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JavaScript</span>
+                                </div>
+                                <span class="project-featured-badge">Featured</span>
+                            </div>
+                            <h3 class="project-name">Connect Hub</h3>
+                            <p class="project-desc">A custom-built unified routing platform that connects all personal links and projects in one elegant portal. Designed for speed, simplicity, and a premium look.</p>
+                            <div class="project-footer" style="display: flex; gap: 10px; margin-top: auto;">
+                                <a href="https://github.com/TanmayRongre/Connect-Hub" target="_blank" class="project-link-btn">
+                                    <span>GitHub Repo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="https://tanmayrongre.github.io/Connect-hub" target="_blank" class="project-link-btn">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculator -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-top">
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JS</span>
+                                </div>
+                            </div>
+                            <h3 class="project-name">Calculator</h3>
+                            <p class="project-desc">A sleek, glassmorphism-styled calculator with arithmetic and scientific operations. Smooth keypress animations.</p>
+                            <div class="project-footer" style="display: flex; gap: 10px; margin-top: auto;">
+                                <a href="https://github.com/TanmayRongre/Simple-Calculator" target="_blank" class="project-link-btn">
+                                    <span>GitHub Repo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="https://tanmayrongre.github.io/Simple-Calculator" target="_blank" class="project-link-btn">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Discount Calculator -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-top">
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JS</span>
+                                </div>
+                            </div>
+                            <h3 class="project-name">Discount Calculator</h3>
+                            <p class="project-desc">Smart discount and savings calculator with real-time price computation and comparison breakdown.</p>
+                            <div class="project-footer" style="display: flex; gap: 10px; margin-top: auto;">
+                                <a href="https://github.com/TanmayRongre/Discount-Calculator" target="_blank" class="project-link-btn">
+                                    <span>GitHub Repo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="https://tanmayrongre.github.io/Discount-Calculator" target="_blank" class="project-link-btn">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="services-section" id="services">
+                <div class="services-container tile-panel">
+                    <div class="services-header">
+                        <span class="services-sub">What i will do for you</span>
+                        <h2 class="services-title">SERVICES</h2>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-item glass-tile">
+                            <div class="service-icon-wrapper">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fff6ee' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'/></svg>"
+                                    alt="Web Design Icon" class="service-icon">
+                            </div>
+                            <h3>Web Design</h3>
+                            <p>I do ui/ux design for the website that helps website to get a unique look.</p>
+                        </div>
+
+                        <div class="service-item glass-tile">
+                            <div class="service-icon-wrapper">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fff6ee' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'/></svg>"
+                                    alt="Web Dev Icon" class="service-icon">
+                            </div>
+                            <h3>Web Dev</h3>
+                            <p>I also develop the websites. I create high performance website with blazing fast speed.
+                            </p>
+                        </div>
+
+                        <div class="service-item glass-tile">
+                            <div class="service-icon-wrapper">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fff6ee' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z'/></svg>"
+                                    alt="App Dev Icon" class="service-icon">
+                            </div>
+                            <h3>App Dev</h3>
+                            <p>I develop mobile application. I create mobile app with eye catching ui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section" id="contact">
+                <div class="contact-layout-container">
+                    <div class="contact-title">
+                        LET'S WORK <span class="dimmed-text">TOGETHER</span>
+                    </div>
+
+                    <div class="contact-form glass-tile p-4">
+                        <form action="./submit.html" method="POST" class="form-wrapper">
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Your Subject"></input>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Message"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-logo">TR<span class="glow-dot">.</span></span>
+            <p class="footer-copy">© 2026 Tanmay Rongre &mdash; Built with passion &amp; code.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== THEME PANEL ===== -->
+    <div class="theme-panel" id="themePanel" aria-hidden="true">
+        <div class="theme-panel-inner">
+            <div class="theme-panel-header">
+                <span class="theme-panel-title">APPEARANCE</span>
+                <button class="theme-close-btn" id="themePanelClose" title="Close">✕</button>
+            </div>
+
+            <!-- Mode selector pills -->
+            <div class="theme-mode-row">
+                <button class="theme-mode-btn" data-mode="dark" id="modeDark">🌑 Dark</button>
+                <button class="theme-mode-btn" data-mode="light" id="modeLight">☀️ Light</button>
+                <button class="theme-mode-btn" data-mode="custom" id="modeCustom">🎨 Custom</button>
+            </div>
+
+            <!-- Custom accent section -->
+            <div class="theme-custom-section" id="themeCustomSection">
+                <p class="theme-section-label">PRESET ACCENTS</p>
+                <div class="theme-presets" id="themePresets">
+                    <button class="preset-swatch" data-color="#FF4A1C" style="background:#FF4A1C" title="Ember"></button>
+                    <button class="preset-swatch" data-color="#7C3AED" style="background:#7C3AED" title="Violet"></button>
+                    <button class="preset-swatch" data-color="#06B6D4" style="background:#06B6D4" title="Cyan"></button>
+                    <button class="preset-swatch" data-color="#10B981" style="background:#10B981" title="Emerald"></button>
+                    <button class="preset-swatch" data-color="#F59E0B" style="background:#F59E0B" title="Amber"></button>
+                    <button class="preset-swatch" data-color="#EC4899" style="background:#EC4899" title="Pink"></button>
+                    <button class="preset-swatch" data-color="#3B82F6" style="background:#3B82F6" title="Blue"></button>
+                    <button class="preset-swatch" data-color="#84CC16" style="background:#84CC16" title="Lime"></button>
+                </div>
+                <p class="theme-section-label" style="margin-top: 1.1rem;">CUSTOM COLOR</p>
+                <div class="theme-color-picker-row">
+                    <input type="color" id="customColorPicker" value="#FF4A1C" class="custom-color-input">
+                    <span class="custom-color-hex" id="customColorHex">#FF4A1C</span>
+                    <button class="apply-custom-btn" id="applyCustomColor">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
